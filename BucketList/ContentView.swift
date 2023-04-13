@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum LoadingState {
-    case loaing, success, failed
+    case loading, success, failed
 }
 
 struct LoadingView: View {
@@ -30,11 +30,15 @@ struct FailedView: View {
 }
 
 struct ContentView: View {
+    var loadingState = LoadingState.loading
+    
     var body: some View {
-        if Bool.random() {
-            Rectangle()
+        if loadingState == .loading {
+            LoadingView()
+        } else if loadingState == .success {
+            SuccessView()
         } else {
-            Circle()
+            FailedView()
         }
     }
 }
