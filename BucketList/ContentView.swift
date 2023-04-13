@@ -7,15 +7,20 @@
 
 import SwiftUI
 
+struct User: Identifiable {
+    var id = UUID()
+    var firstName: String
+    var lastName: String
+}
+
+
 struct ContentView: View {
+    let values = [1,5,3,6,2,9].sorted()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(values, id: \.self) {
+            Text(String($0))
         }
-        .padding()
     }
 }
 
