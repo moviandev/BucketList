@@ -15,11 +15,17 @@ struct User: Identifiable {
 
 
 struct ContentView: View {
-    let values = [1,5,3,6,2,9].sorted()
+    let users = [
+        User(firstName: "Maria", lastName: "ZAparecida"),
+        User(firstName: "Jose", lastName: "Oliveira"),
+        User(firstName: "Solange", lastName: "Slange")
+    ].sorted {
+        $0.lastName < $1.lastName
+    }
     
     var body: some View {
-        List(values, id: \.self) {
-            Text(String($0))
+        List(users) {
+            Text("\($0.firstName) \($0.lastName)")
         }
     }
 }
