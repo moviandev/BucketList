@@ -22,6 +22,7 @@ struct ContentView: View {
                         try str.write(to: url, atomically: true, encoding: .utf8)
                         
                         let input = try String(contentsOf: url)
+                        print(input)
                     } catch {
                         print(error.localizedDescription)
                     }
