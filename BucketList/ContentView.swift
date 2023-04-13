@@ -23,7 +23,9 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        Map(coordinateRegion: $mapRegion)
+        Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
+            MapMarker(coordinate: location.coordinate)
+        }
     }
 }
 
