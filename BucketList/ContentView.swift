@@ -17,7 +17,6 @@ struct User: Identifiable, Comparable {
     }
 }
 
-
 struct ContentView: View {
     let users = [
         User(firstName: "Maria", lastName: "ZAparecida"),
