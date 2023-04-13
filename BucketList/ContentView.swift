@@ -5,6 +5,7 @@
 //  Created by Matheus Viana on 12/04/23.
 //
 
+import LocalAuthentication
 import SwiftUI
 
 struct ContentView: View {
