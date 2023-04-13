@@ -13,9 +13,17 @@ struct ContentView: View {
     
     
     var body: some View {
+        VStack {
+            if isUnlocked {
+                Text("Unlocked")
+            } else {
+                Text("Locked")
+            }
+        }
+        .onAppear(perform: authenticate)
     }
     
-    func authentication() {
+    func authenticate() {
         let context = LAContext()
         var error: NSError?
         
