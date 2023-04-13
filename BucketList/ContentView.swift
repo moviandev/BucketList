@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Create a generic method to save into file like we did in project 8
     var body: some View {
         VStack {
             Image(systemName: "globe")
