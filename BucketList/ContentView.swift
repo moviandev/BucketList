@@ -14,6 +14,18 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+                .onTapGesture {
+                    let str = "Text manager"
+                    let url = getDocumentsDirectory().appendingPathComponent("message.text")
+                    
+                    do {
+                        try str.write(to: url, atomically: true, encoding: .utf8)
+                        
+                        let input = try String(contentsOf: url)
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                }
         }
         .padding()
     }
