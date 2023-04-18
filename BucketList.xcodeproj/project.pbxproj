@@ -12,6 +12,7 @@
 		BB109CF029E7A0B10049A3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB109CEF29E7A0B10049A3F4 /* Assets.xcassets */; };
 		BB109CF329E7A0B10049A3F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB109CF229E7A0B10049A3F4 /* Preview Assets.xcassets */; };
 		BB109CFA29E7A9780049A3F4 /* FileManagre-Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB109CF929E7A9780049A3F4 /* FileManagre-Url.swift */; };
+		BB3EF31029EE3C59002A9A94 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3EF30F29EE3C59002A9A94 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		BB109CEF29E7A0B10049A3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB109CF229E7A0B10049A3F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB109CF929E7A9780049A3F4 /* FileManagre-Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManagre-Url.swift"; sourceTree = "<group>"; };
+		BB3EF30F29EE3C59002A9A94 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				BB109CEB29E7A0B00049A3F4 /* BucketListApp.swift */,
 				BB109CED29E7A0B00049A3F4 /* ContentView.swift */,
+				BB3EF30F29EE3C59002A9A94 /* Location.swift */,
 				BB109CF929E7A9780049A3F4 /* FileManagre-Url.swift */,
 				BB109CEF29E7A0B10049A3F4 /* Assets.xcassets */,
 				BB109CF129E7A0B10049A3F4 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				BB109CEE29E7A0B00049A3F4 /* ContentView.swift in Sources */,
 				BB109CFA29E7A9780049A3F4 /* FileManagre-Url.swift in Sources */,
+				BB3EF31029EE3C59002A9A94 /* Location.swift in Sources */,
 				BB109CEC29E7A0B00049A3F4 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
