@@ -11,6 +11,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
     
+    @State private var locations = [Location]()
+    
     var body: some View {
         ZStack{
             Map(coordinateRegion: $mapRegion)
@@ -28,7 +30,8 @@ struct ContentView: View {
                     Spacer()
                     
                     Button {
-                        // Create new location
+                        let newLocation = Location(id: UUID(), name: "New Location", description: "", location: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
+                        locations.append(newLocation)
                     } label: {
                         Image(systemName: "plus")
                     }
