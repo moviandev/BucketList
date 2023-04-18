@@ -26,6 +26,11 @@ struct EditView: View {
             .navigationTitle("Plave details")
             .toolbar {
                 Button("Save") {
+                    var newLocation = location
+                    newLocation.name = name
+                    newLocation.description = description
+                    
+                    onSave(newLocation)
                     dismiss()
                 }
             }
