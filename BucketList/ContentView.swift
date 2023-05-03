@@ -55,7 +55,8 @@ struct ContentView: View {
                         Image(systemName: "plus")
                     }
                     .padding()
-                    .background(.black.opacity(0.75))
+                    .background(.black.opacity(0.5))
+                    .background(.ultraThinMaterial)
                     .foregroundColor(.white)
                     .font(.title)
                     .clipShape(Circle())
