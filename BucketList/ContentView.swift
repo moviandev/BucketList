@@ -27,7 +27,7 @@ struct ContentView: View {
                             .fixedSize()
                     }
                     .onTapGesture {
-                        $viewModel.selectedPlace = location
+                        viewModel.selectedPlace = location
                     }
                 }
             }
