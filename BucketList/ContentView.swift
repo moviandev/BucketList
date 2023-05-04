@@ -61,9 +61,7 @@ struct ContentView: View {
         }
         .sheet(item: $viewModel.selectedPlace) { place in
             EditView(location: place) { newLocation in
-                if let index = viewModel.locations.firstIndex(of: place) {
-                    viewModel.locations[index] = newLocation
-                }
+                viewModel.update(location: newLocation)
             }
         }
     }

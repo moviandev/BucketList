@@ -18,5 +18,13 @@ extension ContentView {
             let newLocation = Location(id: UUID(), name: "New Location", description: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
             locations.append(newLocation)
         }
+        
+        func update(location: Location) {
+            guard let selectedPlace = selectedPlace else { return }
+            
+            if let index = locations.firstIndex(of: selectedPlace) {
+                locations[index] = location
+            }
+        }
     }
 }
