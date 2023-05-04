@@ -25,6 +25,15 @@ extension ContentView {
             }
         }
         
+        func save() {
+            do {
+                let data = try JSONEncoder().encode(locations)
+                try data.write(to: savedPath, options: [.atomicWrite, .completeFileProtection])
+            } catch {
+                print("Unable to save data")
+            }
+        }
+        
         func addLocation() {
             let newLocation = Location(id: UUID(), name: "New Location", description: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
             locations.append(newLocation)
