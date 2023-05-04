@@ -45,8 +45,7 @@ struct ContentView: View {
                     Spacer()
                     
                     Button {
-                        let newLocation = Location(id: UUID(), name: "New Location", description: "", latitude: viewModel.mapRegion.center.latitude, longitude: viewModel.mapRegion.center.longitude)
-                        viewModel.locations.append(newLocation)
+                        viewModel.addLocation()
                     } label: {
                         Image(systemName: "plus")
                     }
