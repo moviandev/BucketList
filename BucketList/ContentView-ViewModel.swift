@@ -14,6 +14,17 @@ extension ContentView {
         @Published private(set) var locations = [Location]()
         @Published var selectedPlace: Location?
         
+        let savedPath = FileManager.documentDirectory.appendingPathComponent("SavedPlaces")
+        
+        init() {
+            do {
+                let data = try Data(contentsOf: savedPath)
+                locations = try JSONDecoder().decode([Location].self, from: data)
+            } catch {
+                locations = []
+            }
+        }
+        
         func addLocation() {
             let newLocation = Location(id: UUID(), name: "New Location", description: "", latitude: mapRegion.center.latitude, longitude: mapRegion.center.longitude)
             locations.append(newLocation)
