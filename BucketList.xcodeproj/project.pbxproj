@@ -14,6 +14,7 @@
 		BB109CFA29E7A9780049A3F4 /* FileManagre-Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB109CF929E7A9780049A3F4 /* FileManagre-Url.swift */; };
 		BB3EF31029EE3C59002A9A94 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3EF30F29EE3C59002A9A94 /* Location.swift */; };
 		BB3EF31229EE421D002A9A94 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3EF31129EE421D002A9A94 /* EditView.swift */; };
+		BB851F672A03495F00C35219 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB851F662A03495F00C35219 /* ContentView-ViewModel.swift */; };
 		BBB0CDAF2A01DBA100FE7AD3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0CDAE2A01DBA100FE7AD3 /* Result.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		BB109CF929E7A9780049A3F4 /* FileManagre-Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManagre-Url.swift"; sourceTree = "<group>"; };
 		BB3EF30F29EE3C59002A9A94 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		BB3EF31129EE421D002A9A94 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		BB851F662A03495F00C35219 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		BBB0CDAE2A01DBA100FE7AD3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			children = (
 				BB109CEB29E7A0B00049A3F4 /* BucketListApp.swift */,
 				BB109CED29E7A0B00049A3F4 /* ContentView.swift */,
+				BB851F662A03495F00C35219 /* ContentView-ViewModel.swift */,
 				BBB0CDAE2A01DBA100FE7AD3 /* Result.swift */,
 				BB3EF30F29EE3C59002A9A94 /* Location.swift */,
 				BB3EF31129EE421D002A9A94 /* EditView.swift */,
@@ -154,6 +157,7 @@
 				BB3EF31229EE421D002A9A94 /* EditView.swift in Sources */,
 				BB109CFA29E7A9780049A3F4 /* FileManagre-Url.swift in Sources */,
 				BB3EF31029EE3C59002A9A94 /* Location.swift in Sources */,
+				BB851F672A03495F00C35219 /* ContentView-ViewModel.swift in Sources */,
 				BB109CEC29E7A0B00049A3F4 /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
