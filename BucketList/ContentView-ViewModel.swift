@@ -9,7 +9,7 @@ import Foundation
 import MapKit
 
 extension ContentView {
-    class ViewModel: ObservableObject {
+    @MainActor class ViewModel: ObservableObject {
         
     }
 }
