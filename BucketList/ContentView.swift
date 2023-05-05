@@ -73,6 +73,9 @@ struct ContentView: View {
             .background(.blue)
             .foregroundColor(.white)
             .clipShape(Capsule())
+            .alert(viewModel.errorTitle, isPresented: $viewModel.showingAlert) {
+                Text(viewModel.errorMessage)
+            }
         }
     }
 }
